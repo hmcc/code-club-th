@@ -1,0 +1,29 @@
+.main {
+  padding: 40px 15px;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 60px;
+  padding: 8px 8px;
+}
+
+.navbar-brand img {
+  float: left;
+  margin-right: 5px;
+}
+
+ul.nav a {
+  color: #339933;
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+ul.nav a:hover, a:focus, a.active {
+  color: #2d862d;
+}
