@@ -6,10 +6,20 @@
   margin-bottom: 15px;
 }
 
+.navbar-default {
+  background-color: white;
+}
+
 .navbar-brand {
-  float: left;
-  height: 60px;
+  height: 80px;
   padding: 8px 8px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav li a {
+    height: 80px;
+    padding-top: 30px;
+  }
 }
 
 .navbar-brand img {
@@ -17,13 +27,28 @@
   margin-right: 5px;
 }
 
-ul.nav a {
-  color: #339933;
+#navbar {
   font-size: 18px;
   font-family: "Courier New", monospace;
   font-weight: bold;
 }
 
-ul.nav a:hover, a:focus, a.active {
-  color: #2d862d;
+.navbar-default .navbar-nav>li>a {
+  color: #339933;
+  background-color: white;
+  
 }
+
+.navbar-default .navbar-nav>.active>a {
+  color: #236b23;
+  background-color: white;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #5bad5b;
+  background-color: white;
+}
+
