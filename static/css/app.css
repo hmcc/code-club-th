@@ -51,3 +51,8 @@
   background-color: white;
 }
 
+/* remove dotted lines around links in Firefox/Iceweasel */
+a:active {
+  outline: none;
+}
+
