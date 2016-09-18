@@ -1,118 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Tang Hall Code Club Projects</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>Tang Hall Code Club Projects</title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this site -->
-    <link href="css/app.css" rel="stylesheet">
+  <!-- Custom styles for this site -->
+  <link href="css/sidebar.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+</head>
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+<body>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <nav class="navbar navbar-default">
+    <a class="navbar-brand" href="https://www.codeclub.org.uk/" target="_blank"><img src="img/codeclub.svg" alt="Code Club" height="60px" width="60px"></a>
+    <a class="navbar-brand" href="http://www.tanghallprimary.co.uk/" target="_blank"><img src="img/tanghall.png" alt="Tang Hall"></a>
+    <div class="navbar-right">
+      <ul class="nav navbar-nav">
+        <li><a href="2015-16/wanted.html">2015-16</a></li>
+        <li class="active"><a href="#">2016-17</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="side-navbar-toggle-container">
+    <div>
+      <button type="button" id="side-navbar-toggle" class="side-navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+  </div>
+  <div id="main" class="main">
 
-  <body>
-
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-           <a class="navbar-brand" href="https://www.codeclub.org.uk/" target="_blank"><img src="img/codeclub.svg"  alt="Code Club" height="60px" width="60px"></a><a class="navbar-brand" href="http://www.tanghallprimary.co.uk/" target="_blank"><img src="img/tanghall.png" alt="Tang Hall"></a>
+    <div id="sidebar" class="sidebar">
+      <div class="term-heading">Autumn 2017</div>
+      <div class="type-heading">Scratch 1</div>
+      <ul class="sidebar-nav">
+        <li class="active">
+          <a href="#">
+               Welcome
+            </a>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Welcome to Carey, Melissa, Poppy, Jamie, Connor, Maja, Joseph, Ashleigh, Angel, Nathan, Oliwia, Amelia, Lily, Tegan, Owen, Rosaya, Maisie, Joshua, Ellie, Maddie, Aya, Elliot and Rebecca Rose!</p>
+            <p>Your projects will appear here as you complete them. (Last years' projects have moved <a href="2015-16/wanted.html">here</a>.)</p>
+          </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Happy Birthday</a></li>
-            <li><a href="story.html">Tell a Story</a></li>
-            <li><a href="wanted.html">Wanted</a></li>
-          </ul>
-        </div>
+
+        <!--<div class="copy">
+          <hr/>
+          <small>© <a href="mailto:heather@problemchimp.org">Heather McCartney</a> 2014-16. Source available on <a href="https://github.com/hmcc/code-club-th" target="_blank">GitHub.</a></small>
+        </div>-->
       </div>
-    </nav>
-
-    <div class="container main">
-
-      <div class="row">
-        <div class="col-md-4">
-          <img src="img/birthday.png" alt="Happy Birthday">
-        </div>
-        <div class="col-md-8">
-          <h1>Happy Birthday!</h1>
-          <p>19 & 26 April 2016</p>
-          <p class="lead">We learned how to make customised birthday cards using HTML and CSS.</p>
-        </div>
-      </div>
-      <hr/>
-
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Aya</h3>
-          <iframe src="https://trinket.io/embed/html/61297bec1f?outputOnly=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        </div>
-        <div class="col-md-6">
-          <h3>Elliot</h3>
-          <iframe src="https://trinket.io/embed/html/30954b17ae?outputOnly=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="row">
-         <div class="col-md-6">
-          <h3>Eve</h3>
-          <iframe src="https://trinket.io/embed/html/5b6e44749d?outputOnly=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        </div>
-        <div class="col-md-6">
-          <h3>Matthew</h3>
-          <iframe src="https://trinket.io/embed/html/2ce82a9146?outputOnly=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Rebecca Rose</h3>
-          <iframe src="https://trinket.io/embed/html/e4bc1c5a0b?outputOnly=true" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        </div>
-        <div class="col-md-6">
-          
-        </div>
-      </div>
-    </div><!-- /.container -->
+    </div>
+  </div>
 
 
 
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sidebar.js"></script>
+</body>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-  </body>
 </html>
-

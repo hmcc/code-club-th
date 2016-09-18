@@ -1,9 +1,5 @@
 .main {
-  padding: 40px 15px;
-}
-
-.row {
-  margin-bottom: 15px;
+  padding: 0 15px;
 }
 
 .navbar-default {
@@ -26,19 +22,25 @@
   margin-right: 5px;
 }
 
-#navbar {
+.navbar-right {
   font-size: 18px;
   font-family: "Courier New", monospace;
   font-weight: bold;
 }
 
-.navbar-default .navbar-nav>li>a {
-  color: #339933;
-  background-color: white;
-  
+ul.sidebar-nav {
+  padding: 0;
+  list-style: none;
 }
 
-.navbar-default .navbar-nav>.active>a {
+.navbar-default .navbar-nav>li>a,
+.sidebar-nav a {
+  color: #339933;
+  background-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.sidebar-nav > .active > a {
   color: #236b23;
   background-color: white;
 }
@@ -46,9 +48,25 @@
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>.active>a:focus, 
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a:hover,
+.sidebar-nav > .active > a:hover,
+.sidebar-nav > .active > a:focus {
   color: #5bad5b;
   background-color: white;
+}
+
+/* headings and sub-headings in left menu */
+.sidebar .term-heading,
+.sidebar .type-heading {
+  color: #339933;
+  font-weight: bold;
+}
+
+.sidebar .term-heading {
+  font-size: 1.2em;
+}
+.sidebar ul {
+  padding-left: 10px;
 }
 
 /* remove dotted lines around links in Firefox/Iceweasel */
@@ -56,3 +74,28 @@ a:active {
   outline: none;
 }
 
+/* never collapse the top menu */
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+
+/* copyright */
+.copy {
+  padding: 0 10px 10px 10px;
+}
+
+.copy hr {
+  margin-bottom: 10px
+}

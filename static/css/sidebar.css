@@ -1,0 +1,110 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ body {
+    overflow-x: hidden;
+ }
+
+/* Toggle Styles */
+
+#main {
+    padding-left: 0;
+    
+}
+
+#main.toggled {
+    padding-left: 200px;
+}
+
+#sidebar {
+    z-index: 1000;
+    position: fixed;
+    left: 200px;
+    width: 0;
+    height: 100%;
+    margin-left: -200px;
+    overflow-y: auto;
+}
+
+#main.toggled #sidebar {
+    width: 200px;
+}
+
+#page-content {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#main.toggled #page-content {
+    position: absolute;
+    margin-right: -200px;
+}
+
+/* Sidebar Styles */
+
+@media(min-width:768px) {
+    #main {
+        padding-left: 200px;
+    }
+
+    #main.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar {
+        width: 200px;
+        padding: 0 20px;
+    }
+
+    #main.toggled #sidebar {
+        width: 0;
+    }
+
+    #page-content {
+        padding: 0 20px;
+        position: relative;
+    }
+
+    #main.toggled #page-content {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/** style the toggle button */
+@media(max-width:767px) {
+  #side-navbar-toggle   {
+    height: 35px;
+    width: 44px;
+    padding: 0 10px 4px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  #side-navbar-toggle .icon-bar {
+    display: block;
+    background-color: #888;
+    width: 22px;
+    height: 2px;
+    margin-top: 4px;
+    border-radius: 1px;
+  }  
+}
+
+@media(min-width:768px) {
+  .side-navbar-toggle-container  {
+    display: none;
+  }
+}
+
